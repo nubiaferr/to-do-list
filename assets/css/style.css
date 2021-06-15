@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: rgba(173, 129, 209, 0.746);
+    --primary-color-darker: rgba(161, 71, 235, 0.815);
+    --primary-color-lighter: rgba(204, 198, 209, 0.746);
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+    width: 70%;
+    margin: 50px auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 6px 13px 1px rgba(0,0,0,0.88);
+}
+
+
+.input-task input, 
+.input-task label{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.input-task{
+    font-size: 22px;
+    height: 40px;
+    width: 80%;
+    padding: 0 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+ul{
+    background-color: white;
+    margin: 50px;
+    list-style: none;
+    border-radius: 3px;
+    padding: 0;
+}
+
+li{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5px;
+    align-items: baseline;
+}
+
+button{
+    margin: 5px;
+    height: 30px;
+    width: 35px;
+    background-color: black;
+    color: var(--primary-color-lighter);
+    font-size: 15px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media (max-width: 800px) {
+    
+.container{
+    margin: 25% 20px 25% 20px;
+    
+}
+
+ul{
+    margin: 0px;
+}
+
+li{
+    font-size: 14px;
+    height: 100%;
+    flex: 1;
+    padding-left: 5px;
+    align-items: center;
+}
+
+button{
+    margin: 5px;
+}
+
+}
